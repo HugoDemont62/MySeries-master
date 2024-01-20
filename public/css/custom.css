@@ -1,0 +1,41 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.hover-up {
+  transition: transform 0.5s, background 0.5s;
+}
+
+.hover-up:hover {
+  transform: translate(0px, -15px);
+  background: #5755d9 !important;
+
+  text-decoration: none;
+}
+
+.img.resize {
+    width:120px;
+    height: auto;
+}
+
+.my-badge {
+   position:relative;
+}
+.my-badge[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   top:-7px;
+   right:-7px;
+   font-size:.7em;
+   background: #5755d9;
+   color:white;
+   width:20px;height:20px;
+   text-align:center;
+   line-height:20px;
+   border-radius:50%;
+   box-shadow:0 0 1px #333;
+}
